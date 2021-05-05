@@ -1,4 +1,4 @@
-FROM php:7.2-fpm
+FROM php
 
 # Copy composer.lock and composer.json
 COPY ./LaravelBet/composer.lock ./LaravelBet/composer.json /var/www/
