@@ -1,3 +1,13 @@
+dn: ou=groups,dc=bet,dc=247,dc=com
+changetype: add
+objectClass: OrganizationalUnit
+ou: groups
+
+dn: ou=users,dc=bet,dc=247,dc=com
+changetype: add
+objectClass: OrganizationalUnit
+ou: users
+
 dn: cn=Admins,ou=groups,dc=bet,dc=247,dc=com
 changetype: add
 objectClass: top
