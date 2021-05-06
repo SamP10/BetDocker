@@ -55,6 +55,7 @@ services:
       - app-network
 #LDAP Container
   ldap_server:
+    restart: unless-stopped
     image: wshihadeh/openldap:withdata
     environment:
       LDAP_ADMIN_PASSWORD: tiaspbiqe2r
@@ -65,6 +66,7 @@ services:
       - ldap_data:/var/lib/ldap
       - ldap_config:/etc/ldap/slapd.d
   ldap_server_admin:
+    restart: unless-stopped
     image: osixia/phpldapadmin:0.7.2
     ports:
       - 8080:8080
