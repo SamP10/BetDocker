@@ -59,6 +59,7 @@ services:
     build:
       context: .
       dockerfile: LDAP.Dockerfile
+    image: wshihadeh/openldap:withdata
     environment:
       LDAP_ADMIN_PASSWORD: tiaspbiqe2r
       LDAP_BASE_DN: dc=bet,dc=247,dc=com
