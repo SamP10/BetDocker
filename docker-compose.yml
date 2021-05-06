@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3"
 services:
   web-server:
     build:
@@ -6,7 +6,7 @@ services:
       context: .
     restart: always
     volumes:
-      - "./UniVulnerableWebsite/:/var/www/html/"
+      - "./LaravelBet/:/var/www/html/"
     ports:
       - 8080:80
     links:
