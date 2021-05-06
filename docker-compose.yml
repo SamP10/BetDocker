@@ -67,7 +67,7 @@ services:
   ldap_server_admin:
     image: osixia/phpldapadmin:0.7.2
     ports:
-      - 8090:80
+      - 8080:8080
     environment:
       PHPLDAPADMIN_LDAP_HOSTS: ldap_server
       PHPLDAPADMIN_HTTPS: 'false'
