@@ -61,7 +61,7 @@ services:
       dockerfile: LDAP.Dockerfile
     environment:
       LDAP_ADMIN_PASSWORD: tiaspbiqe2r
-      LDAP_BASE_DN: dc=bet,dc=247
+      LDAP_BASE_DN: dc=bet,dc=247,dc=com
     ports:
       - 389:389
     volumes:

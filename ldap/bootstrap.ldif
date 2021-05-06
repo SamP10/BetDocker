@@ -1,25 +1,25 @@
-dn: cn=Admins,ou=groups,dc=bet,dc=247
+dn: cn=Admins,ou=groups,dc=bet,dc=247,dc=com
 changetype: add
 objectClass: top
 objectClass: posixGroup
 gidnumber: 700
 cn: Admins
 
-dn: cn=Developers,ou=groups,dc=bet,dc=247
+dn: cn=Developers,ou=groups,dc=bet,dc=247,dc=com
 changetype: add
 objectClass: top
 objectClass: posixGroup
 gidnumber: 701
 cn: Developers
 
-dn: cn=Staff,ou=groups,dc=bet,dc=247
+dn: cn=Staff,ou=groups,dc=bet,dc=247,dc=com
 changetype: add
 objectClass: top
 objectClass: posixGroup
 gidnumber: 702
 cn: Staff
 
-dn: cn=Admin1,ou=users,dc=bet,dc=247
+dn: cn=Admin1,ou=users,dc=bet,dc=247,dc=com
 changetype: add
 objectClass: top
 objectClass: account
@@ -33,7 +33,7 @@ homeDirectory: /home/Admin1
 userPassword: password1234
 loginShell: /bin/bash
 
-dn: cn=Admin2,ou=users,dc=bet,dc=247
+dn: cn=Admin2,ou=users,dc=bet,dc=247,dc=com
 changetype: add
 objectClass: top
 objectClass: account
@@ -47,7 +47,7 @@ homeDirectory: /home/Admin2
 userPassword: BicycleR1der
 loginShell: /bin/bash
 
-dn: cn=Dev1,ou=users,dc=bet,dc=247
+dn: cn=Dev1,ou=users,dc=bet,dc=247,dc=com
 changetype: add
 objectClass: top
 objectClass: account
@@ -61,7 +61,7 @@ homeDirectory: /home/Dev1
 userPassword: C0d3K1ng
 loginShell: /bin/bash
 
-dn: cn=Dev2,ou=users,dc=bet,dc=247
+dn: cn=Dev2,ou=users,dc=bet,dc=247,dc=com
 changetype: add
 objectClass: top
 objectClass: account
@@ -75,7 +75,7 @@ homeDirectory: /home/Dev2
 userPassword: devOps
 loginShell: /bin/bash
 
-dn: cn=Dev3,ou=users,dc=bet,dc=247
+dn: cn=Dev3,ou=users,dc=bet,dc=247,dc=com
 changetype: add
 objectClass: top
 objectClass: account
@@ -89,7 +89,7 @@ homeDirectory: /home/Dev3
 userPassword: Racer69
 loginShell: /bin/bash
 
-dn: cn=Staff1,ou=users,dc=bet,dc=247
+dn: cn=Staff1,ou=users,dc=bet,dc=247,dc=com
 changetype: add
 objectClass: top
 objectClass: account
@@ -103,7 +103,7 @@ homeDirectory: /home/Staff1
 userPassword: B4tt3ryP4ck
 loginShell: /bin/bash
 
-dn: cn=Staff2,ou=users,dc=bet,dc=247
+dn: cn=Staff2,ou=users,dc=bet,dc=247,dc=com
 changetype: add
 objectClass: top
 objectClass: account
@@ -117,7 +117,7 @@ homeDirectory: /home/Staff2
 userPassword: Fufu12
 loginShell: /bin/bash
 
-dn: cn=Staff3,ou=users,dc=bet,dc=247
+dn: cn=Staff3,ou=users,dc=bet,dc=247,dc=com
 changetype: add
 objectClass: top
 objectClass: account
