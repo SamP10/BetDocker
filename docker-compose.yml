@@ -1,40 +1,33 @@
-version: '3'
+version: "3.7"
 services:
+  web-server:
+    build:
+      dockerfile: php.dockerfile
+      context: .
+    restart: always
+    volumes:
+      - "./UniVulnerableWebsite/:/var/www/html/"
+    ports:
+      - 8080:80
+    links:
+      - mariadb
 
-  #PHP Service
+  mariadb:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: tiaspbiqe2r
+      MYSQL_DATABASE: university
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - "./uni.sql:/tmp/uni.sql"
+
   app:
     build:
+      dockerfile: app.Dockerfile
       context: .
-      dockerfile: Dockerfile.dockerfile
-    image: digitalocean.com/php
-    container_name: app
-    restart: unless-stopped
-    tty: true
-    environment:
-      SERVICE_NAME: app
-      SERVICE_TAGS: dev
-    working_dir: /var/www
+    volumes:
+      - "./LaravelBet/:/var/www/"
 
-  #Nginx Service
-  webserver:
-    image: nginx:alpine
-    container_name: webserver
-    restart: unless-stopped
-    tty: true
-    ports:
-      - "8080:8080"
-      - "443:443"
-
-  #MySQL Service
-  db:
-    image: mariadb
-    container_name: db
-    restart: unless-stopped
-    tty: true
-    ports:
-      - "3306:3306"
-    environment:
-      MYSQL_DATABASE: bet
-      MYSQL_ROOT_PASSWORD: tiaspbiqe2r
-      SERVICE_TAGS: dev
-      SERVICE_NAME: mysql
+volumes:
+  mysql-data:
+  user-data-ftp:
