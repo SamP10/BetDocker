@@ -1,51 +1,133 @@
-dn: cn=developer,dc=bet,dc=247
+dn: cn=Admins,ou=groups,dc=bet,dc=247
 changetype: add
-objectclass: inetOrgPerson
-cn: developer
-givenname: developer
-sn: Developer
-displayname: Developer User
-mail: developer@gmail.com
-userpassword: password123
-
-dn: cn=admin,dc=bet,dc=247
-changetype: add
-objectclass: inetOrgPerson
-cn: admin
-givenname: admin
-sn: admin
-displayname: Admin User
-mail: Admin@gmail.com
-userpassword: admin1234
-
-dn: cn=admin_gh,dc=bet,dc=247
-changetype: add
-objectclass: inetOrgPerson
-cn: admin_gh
-givenname: admin_gh
-sn: AdminGithub
-displayname: Admin Github User
-mail: admin_gh@gmail.com
-userpassword: admin_gh123
-
-dn: ou=Groups,dc=bet,dc=247
-changetype: add
-objectclass: organizationalUnit
-ou: Groups
-
-dn: ou=Users,dc=bet,dc=247
-changetype: add
-objectclass: organizationalUnit
-ou: Users
-
-dn: cn=Admins,ou=Groups,dc=bet,dc=247
-changetype: add
+objectClass: top
+objectClass: posixGroup
+gidnumber: 700
 cn: Admins
-objectclass: groupOfUniqueNames
-uniqueMember: cn=admin,dc=bet,dc=247
 
-dn: cn=Developers,ou=Groups,dc=bet,dc=247
+dn: cn=Developers,ou=groups,dc=bet,dc=247
 changetype: add
+objectClass: top
+objectClass: posixGroup
+gidnumber: 701
 cn: Developers
-objectclass: groupOfUniqueNames
-uniqueMember: cn=developer,dc=bet,dc=247
+
+dn: cn=Staff,ou=groups,dc=bet,dc=247
+changetype: add
+objectClass: top
+objectClass: posixGroup
+gidnumber: 702
+cn: Staff
+
+dn: cn=Admin1,ou=users,dc=bet,dc=247
+changetype: add
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Admin1
+uid: Admin1
+uidNumber: 10001
+gidNumber: 700
+homeDirectory: /home/Admin1
+userPassword: password1234
+loginShell: /bin/bash
+
+dn: cn=Admin2,ou=users,dc=bet,dc=247
+changetype: add
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Admin2
+uid: Admin2
+uidNumber: 10002
+gidNumber: 700
+homeDirectory: /home/Admin2
+userPassword: BicycleR1der
+loginShell: /bin/bash
+
+dn: cn=Dev1,ou=users,dc=bet,dc=247
+changetype: add
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Dev1
+uid: Dev1
+uidNumber: 10003
+gidNumber: 701
+homeDirectory: /home/Dev1
+userPassword: C0d3K1ng
+loginShell: /bin/bash
+
+dn: cn=Dev2,ou=users,dc=bet,dc=247
+changetype: add
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Dev2
+uid: Dev2
+uidNumber: 10004
+gidNumber: 701
+homeDirectory: /home/Dev2
+userPassword: devOps
+loginShell: /bin/bash
+
+dn: cn=Dev3,ou=users,dc=bet,dc=247
+changetype: add
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Dev3
+uid: Dev3
+uidNumber: 10005
+gidNumber: 701
+homeDirectory: /home/Dev3
+userPassword: Racer69
+loginShell: /bin/bash
+
+dn: cn=Staff1,ou=users,dc=bet,dc=247
+changetype: add
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Staff1
+uid: Staff1
+uidNumber: 10006
+gidNumber: 702
+homeDirectory: /home/Staff1
+userPassword: B4tt3ryP4ck
+loginShell: /bin/bash
+
+dn: cn=Staff2,ou=users,dc=bet,dc=247
+changetype: add
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Staff2
+uid: Staff2
+uidNumber: 10007
+gidNumber: 702
+homeDirectory: /home/Staff2
+userPassword: Fufu12
+loginShell: /bin/bash
+
+dn: cn=Staff3,ou=users,dc=bet,dc=247
+changetype: add
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Staff3
+uid: Staff3
+uidNumber: 10008
+gidNumber: 702
+homeDirectory: /home/Staff3
+userPassword: BethAnneTate
+loginShell: /bin/bash
+
