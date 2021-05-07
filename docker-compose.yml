@@ -54,20 +54,37 @@ services:
     networks:
       - app-network
 #LDAP Container
-  ldap_server:
-    restart: unless-stopped
+#  ldap_server:
+#    restart: unless-stopped
+#    build:
+#      context: .
+#      dockerfile: LDAP.Dockerfile
+#    image: wshihadeh/openldap:withdata
+#    environment:
+#      LDAP_ADMIN_PASSWORD: tiaspbiqe2r
+#      LDAP_BASE_DN: dc=bet,dc=247,dc=com
+#    ports:
+#      - 389:389
+#    volumes:
+#      - ldap_data:/var/lib/ldap
+#      - ldap_config:/etc/ldap/slapd.d
+
+  ldap:
+    image: jgnagy/testldap:latest
+    mem_limit: 536870912 # 512M
+    privileged: true
+    # Uncomment the port to access LDAP from your machine
+     ports:
+       - "389:389"
+
+  testbox:
     build:
       context: .
-      dockerfile: LDAP.Dockerfile
-    image: wshihadeh/openldap:withdata
-    environment:
-      LDAP_ADMIN_PASSWORD: tiaspbiqe2r
-      LDAP_BASE_DN: dc=bet,dc=247,dc=com
-    ports:
-      - 389:389
-    volumes:
-      - ldap_data:/var/lib/ldap
-      - ldap_config:/etc/ldap/slapd.d
+      dockerfile: ./ldap/Dockerfile
+    depends_on:
+      - ldap
+    links:
+      - ldap:ldap
 
 #Docker Networks
 networks:
@@ -78,5 +95,5 @@ networks:
 volumes:
   dbdata:
     driver: local
-  ldap_data:
-  ldap_config:
+#  ldap_data:
+#  ldap_config:

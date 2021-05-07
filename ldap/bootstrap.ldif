@@ -1,9 +1,9 @@
 dn: ou=groups,dc=bet,dc=247,dc=com
-objectClass: OrganizationalUnit
+objectClass: organizationalUnit
 ou: groups
 
 dn: ou=users,dc=bet,dc=247,dc=com
-objectClass: OrganizationalUnit
+objectClass: organizationalUnit
 ou: users
 
 dn: cn=Admins,ou=groups,dc=bet,dc=247,dc=com
