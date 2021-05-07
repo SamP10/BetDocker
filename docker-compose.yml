@@ -76,7 +76,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - 21:21
-      - 2222:2222
+      - 2222
 #Docker Networks
 networks:
   app-network:
