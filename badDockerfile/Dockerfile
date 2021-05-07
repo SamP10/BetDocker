@@ -7,3 +7,4 @@ RUN apt-get install -y policykit-1 \
     openssh-server
 COPY ./sshd_config /etc/ssh/sshd_config
 RUN service ssh start
+CMD ["/usr/sbin/sshd","-D"]
