@@ -9,19 +9,19 @@ ou: users
 dn: cn=Admins,ou=groups,dc=bet,dc=247,dc=com
 objectClass: top
 objectClass: posixGroup
-gidnumber: 700
+gidNumber: 700
 cn: Admins
 
 dn: cn=Developers,ou=groups,dc=bet,dc=247,dc=com
 objectClass: top
 objectClass: posixGroup
-gidnumber: 701
+gidNumber: 701
 cn: Developers
 
 dn: cn=Staff,ou=groups,dc=bet,dc=247,dc=com
 objectClass: top
 objectClass: posixGroup
-gidnumber: 702
+gidNumber: 702
 cn: Staff
 
 dn: cn=Admin1,ou=users,dc=bet,dc=247,dc=com
