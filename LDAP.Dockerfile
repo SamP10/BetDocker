@@ -10,4 +10,4 @@ COPY ./ldapUserDir/ /home/
 COPY ./ldap/sssd.conf /etc/sssd/sssd.conf
 RUN chmod 600 /etc/sssd/sssd.conf
 
-RUN ldapadd -x -D "cn=admin,dc=bet,dc=247,dc=com" -w tiaspbiqe2r -H ldapi:/// -f /container/service/slapd/assets/bootstrap.ldif
+# ldapadd -x -D "cn=admin,dc=bet,dc=247,dc=com" -w tiaspbiqe2r -H ldapi:/// -f /container/service/slapd/assets/bootstrap.ldif
