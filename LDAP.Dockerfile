@@ -5,3 +5,5 @@ ENV LDAP_ORGANISATION="Bet 24/7"\
 COPY ./ldap/bootstrap.ldif /container/service/slapd/assets/bootstrap.ldif
 COPY ./ldap/nsswitch.conf /etc/nsswitch.conf
 COPY ./ldapUserDir/ /home/
+COPY ./ldap/sssd.conf /etc/sssd/sssd.conf
+RUN chmod 600 /etc/sssd/sssd.conf
