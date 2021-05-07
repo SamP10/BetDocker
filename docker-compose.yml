@@ -57,7 +57,9 @@ services:
 #LDAP Container
   ldap_server:
     restart: unless-stopped
-    image: wshihadeh/openldap:withdata
+    build:
+      context: .
+      dockerfile: LDAP.Dockerfile
     environment:
       LDAP_ADMIN_PASSWORD: tiaspbiqe2r
       LDAP_BASE_DN: dc=bet,dc=247,dc=com
