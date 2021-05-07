@@ -57,10 +57,9 @@ services:
 
   ldap:
     image: jgnagy/testldap:latest
-    mem_limit: 536870912 # 512M
+    mem_limit: 536870912
     privileged: true
-    # Uncomment the port to access LDAP from your machine
-     ports:
+    ports:
        - "389:389"
 
   testbox:
