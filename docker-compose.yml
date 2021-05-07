@@ -69,7 +69,7 @@ services:
       - ldap_data:/var/lib/ldap
       - ldap_config:/etc/ldap/slapd.d
 
-  badDocker:
+  baddocker:
     restart: unless-stopped
     build:
       context: ./badDockerfile
