@@ -1,30 +1,36 @@
 dn: ou=groups,dc=bet,dc=247,dc=com
+changetype: add
 objectClass: organizationalUnit
 ou: groups
 
 dn: ou=users,dc=bet,dc=247,dc=com
+changetype: add
 objectClass: organizationalUnit
 ou: users
 
 dn: cn=Admins,ou=groups,dc=bet,dc=247,dc=com
+changetype: add
 objectClass: top
 objectClass: posixGroup
 gidNumber: 700
 cn: Admins
 
 dn: cn=Developers,ou=groups,dc=bet,dc=247,dc=com
+changetype: add
 objectClass: top
 objectClass: posixGroup
 gidNumber: 701
 cn: Developers
 
 dn: cn=Staff,ou=groups,dc=bet,dc=247,dc=com
+changetype: add
 objectClass: top
 objectClass: posixGroup
 gidNumber: 702
 cn: Staff
 
 dn: cn=Admin1,ou=users,dc=bet,dc=247,dc=com
+changetype: add
 objectClass: top
 objectClass: account
 objectClass: posixAccount
@@ -38,6 +44,7 @@ userPassword: password1234
 loginShell: /bin/bash
 
 dn: cn=Admin2,ou=users,dc=bet,dc=247,dc=com
+changetype: add
 objectClass: top
 objectClass: account
 objectClass: posixAccount
@@ -51,6 +58,7 @@ userPassword: BicycleR1der
 loginShell: /bin/bash
 
 dn: cn=Dev1,ou=users,dc=bet,dc=247,dc=com
+changetype: add
 objectClass: top
 objectClass: account
 objectClass: posixAccount
@@ -64,6 +72,7 @@ userPassword: C0d3K1ng
 loginShell: /bin/bash
 
 dn: cn=Dev2,ou=users,dc=bet,dc=247,dc=com
+changetype: add
 objectClass: top
 objectClass: account
 objectClass: posixAccount
@@ -77,6 +86,7 @@ userPassword: devOps
 loginShell: /bin/bash
 
 dn: cn=Dev3,ou=users,dc=bet,dc=247,dc=com
+changetype: add
 objectClass: top
 objectClass: account
 objectClass: posixAccount
@@ -90,6 +100,7 @@ userPassword: Racer69
 loginShell: /bin/bash
 
 dn: cn=Staff1,ou=users,dc=bet,dc=247,dc=com
+changetype: add
 objectClass: top
 objectClass: account
 objectClass: posixAccount
@@ -103,6 +114,7 @@ userPassword: B4tt3ryP4ck
 loginShell: /bin/bash
 
 dn: cn=Staff2,ou=users,dc=bet,dc=247,dc=com
+changetype: add
 objectClass: top
 objectClass: account
 objectClass: posixAccount
@@ -116,6 +128,7 @@ userPassword: Fufu12
 loginShell: /bin/bash
 
 dn: cn=Staff3,ou=users,dc=bet,dc=247,dc=com
+changetype: add
 objectClass: top
 objectClass: account
 objectClass: posixAccount
