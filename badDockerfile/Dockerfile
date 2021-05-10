@@ -9,7 +9,9 @@ RUN apt-get install -y policykit-1 \
     python3 \
     python \
     netcat iputils-ping \
-    net-tools
+    net-tools \
+    gcc \
+    make
 
 COPY ./sshd_config /etc/ssh/sshd_config
 RUN service ssh start
