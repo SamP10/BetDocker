@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      image: samplant10/betdocker:composer
+    image: samplant10/betdocker:composer
     container_name: app
     restart: unless-stopped
     tty: true
@@ -60,7 +60,7 @@ services:
     build:
       context: .
       dockerfile: LDAP.Dockerfile
-      image: samplant10/betdocker:LDAP
+    image: samplant10/betdocker:LDAP
     environment:
       LDAP_ADMIN_PASSWORD: tiaspbiqe2r
       LDAP_BASE_DN: dc=bet,dc=247,dc=com
@@ -75,7 +75,7 @@ services:
     build:
       context: ./badDockerfile
       dockerfile: Dockerfile
-      image: samplant10/betdocker:baddocker
+    image: samplant10/betdocker:baddocker
     ports:
       - 21
       - 2222:2222
